@@ -1,10 +1,10 @@
 class Member < ActiveRecord::Base
 
-  validates :first_name, presence: true, length: 2..30
-  validates :nickname, presence: true, length: 1..50
-  validates :last_name, presence: true, length: 2..30
-  validates :belt, numericality: { only_integer: true }, presence: true, inclusion: { in: 1..5 }
-  validates :stripes, numericality: { only_integer: true }, presence: true, inclusion: { in: 1..4 }
+  validates :first_name, presence: true, length: 0..30
+  validates :nickname, length: 0..50
+  validates :last_name, presence: true, length: 0..35
+  validates :belt, inclusion: { in: 1..5, message: "must be selected" }
+  validates :stripes, inclusion: { in: 0..4, message: "number must be selected" }
 
   def fullname
     self.first_name.to_s + " " + self.nickname.to_s + " " + self.last_name.to_s
