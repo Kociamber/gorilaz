@@ -13,12 +13,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 group :development, :test do
+  gem 'better_errors'
+  gem 'factory_girl'
+  gem 'capybara'
+  gem 'rspec-rails', '~> 3.0'
   gem 'byebug'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
-
+  gem 'letter_opener'
+  gem 'pry-rails'
   gem 'spring'
 end
 
