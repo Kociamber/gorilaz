@@ -24,7 +24,7 @@ class MembersController < ApplicationController
   end
 
   def update
-    return :edit unless @member.update(member_params)
+    return render :edit unless @member.update(member_params)
     redirect_to @member, notice: 'Member was successfully updated.'
   end
 
