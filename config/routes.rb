@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  resources :members
   devise_for :users
 
   devise_scope :user do
     authenticated :user do
-      root 'member#index', as: :authenticated_root
+      root 'members#index', as: :authenticated_root
     end
 
     unauthenticated do
