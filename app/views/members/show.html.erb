@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @member.first_name %>
+</p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @member.nickname %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @member.last_name %>
+</p>
+
+<p>
+  <strong>Date birth:</strong>
+  <%= @member.date_birth %>
+</p>
+
+<p>
+  <strong>Date joined:</strong>
+  <%= @member.date_joined %>
+</p>
+
+<p>
+  <strong>Belt:</strong>
+  <%= @member.belt %>
+</p>
+
+<p>
+  <strong>Stripes:</strong>
+  <%= @member.stripes %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @member.avatar %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @member.description %>
+</p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>
