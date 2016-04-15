@@ -1,6 +1,6 @@
 <%= form_for(@member) do |f| %>
   <% if @member.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-warning">
       <h2><%= pluralize(@member.errors.count, "error") %> prohibited this member from being saved:</h2>
 
       <ul>
@@ -33,11 +33,11 @@
   </div>
   <div class="field">
     <%= f.label :belt %><br>
-    <%= f.number_field :belt %>
+    <%= f.select :belt, [['White','1'],['Blue','2'],['Purple','3'],['Borwn','4'],['Black','5']] %>
   </div>
   <div class="field">
     <%= f.label :stripes %><br>
-    <%= f.number_field :stripes %>
+    <%= f.select :stripes, [0,1,2,3,4] %>
   </div>
   <div class="field">
     <%= f.label :avatar %><br>
