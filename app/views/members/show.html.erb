@@ -1,43 +1,24 @@
-<p id="notice"><%= notice %></p>
+
+<%= @member.avatar %>
 
 <p>
-  <strong>First name:</strong>
-  <%= @member.first_name %>
-</p>
-
-<p>
-  <strong>Nickname:</strong>
-  <%= @member.nickname %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @member.last_name %>
-</p>
-
-<p>
-  <strong>Date birth:</strong>
-  <%= @member.date_birth %>
-</p>
-
-<p>
-  <strong>Date joined:</strong>
-  <%= @member.date_joined %>
+  <h3><%= @member.fullname %></h3>
 </p>
 
 <p>
   <strong>Belt:</strong>
   <%= @member.belt %>
-</p>
-
-<p>
-  <strong>Stripes:</strong>
   <%= @member.stripes %>
 </p>
 
 <p>
-  <strong>Avatar:</strong>
-  <%= @member.avatar %>
+  <strong>Joined:</strong>
+  <%= @member.date_joined %>
+</p>
+
+<p>
+  <strong>Born:</strong>
+  <%= @member.date_birth %>
 </p>
 
 <p>
