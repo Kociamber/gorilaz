@@ -1,0 +1,45 @@
+.table-header {
+  border-bottom: 2px solid $darkestblue;
+  span {
+    padding-top: 10px;
+    font-weight: bold;
+  }
+}
+
+.table-row {
+  border-bottom: 2px solid $lightblue;
+  div {
+    padding-top: 10px;
+  }
+}
+
+.member-belt {
+  margin-top: -5px;
+}
+
+.belt-brown {
+  position: relative;
+  height: 30px;
+  background-color: brown;
+  border-radius: 5px 0px 0px 5px ;
+}
+
+.patch {
+  background-color: black;
+  width: 70px;
+  height: 100%;
+  margin-left: 21px;
+  margin-top: -10px;
+  position: absolute;
+  padding-left: 7px;
+}
+
+.stripe {
+  background-color: white;
+  width: 7px;
+  height: 100%;
+  margin-left: 2px;
+  /* position: absolute; */
+  list-style-type: none;
+  display: inline-block;
+}
