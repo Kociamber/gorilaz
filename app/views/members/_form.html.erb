@@ -10,49 +10,45 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
+    <%= f.text_field :first_name, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :nickname %><br>
-    <%= f.text_field :nickname %>
+    <%= f.text_field :nickname, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
+    <%= f.text_field :last_name, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :date_birth %><br>
-    <%= f.date_select :date_birth %>
+    <%= f.date_select :date_birth, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :date_joined %><br>
-    <%= f.date_select :date_joined %>
+    <%= f.date_select :date_joined, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :belt %><br>
-    <%= f.select :belt, [['White','1'],['Blue','2'],['Purple','3'],['Borwn','4'],['Black','5']] %>
+    <%= f.select :belt, [['White','1'],['Blue','2'],['Purple','3'],['Borwn','4'],['Black','5']], class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :stripes %><br>
-    <%= f.select :stripes, [0,1,2,3,4] %>
+    <%= f.select :stripes, [0,1,2,3,4], class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :avatar %><br>
-    <%= f.text_field :avatar %>
-  </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: "form-control" %>
   </div>
-  <div>
-    <label>Avatar</label>
+  <div class="field form-group">
+    <%= f.label :avatar %><br>
+    <%= image_tag(@member.avatar, class: "avatar") %>
     <%= f.file_field :avatar %>
-    <%= f.hidden_field :avatar_cache %>
+    <%= f.hidden_field :avatar_cache, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-default" %>
   </div>
 <% end %>
