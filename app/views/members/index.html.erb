@@ -10,7 +10,7 @@
 <% @members.each do |member| %>
   <div class="row table-row">
     <div class="col-md-3 member-name">
-      <span><%= link_to member.avatar, member %> <%= link_to member.fullname, member %></span>
+      <%= link_to image_tag(member.avatar, class: "avatar_small"), member %><%= link_to member.fullname, member %>
     </div>
     <div class="col-md-2 member-joined">
       <%= member.date_joined %>
