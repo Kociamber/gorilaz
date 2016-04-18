@@ -1,30 +1,36 @@
-
-<%= @member.avatar %>
-
-<p>
-  <h3><%= @member.fullname %></h3>
-</p>
-
-<p>
-  <strong>Belt:</strong>
-  <%= @member.belt %>
-  <%= @member.stripes %>
-</p>
-
-<p>
-  <strong>Joined:</strong>
-  <%= @member.date_joined %>
-</p>
-
-<p>
-  <strong>Born:</strong>
-  <%= @member.date_birth %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @member.description %>
-</p>
+<div class="row">
+  <div class="col-md-3">
+    <%= @member.avatar %>
+  </div>
+  <div class="col-md-9">
+    <div class="row">
+      <div class="col-md-12">
+        <h3><%= @member.fullname %></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <%= render partial: 'layouts/belt', locals: {belt: @member.belt, stripes: @member.stripes} %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <strong>Joined:</strong>
+        <%= @member.date_joined %>
+      </div>
+      <div class="col-md-6">
+        <strong>Born:</strong>
+        <%= @member.date_birth %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <strong>Description:</strong>
+        <%= @member.description %>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_member_path(@member) %> |
 <%= link_to 'Back', members_path %>
