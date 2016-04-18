@@ -1,55 +1,29 @@
 <h2>Academia Gorila Members</h2>
 <%= link_to 'Add Member', new_member_path %>
 
-<!--<table class="table table-hover table-striped">-->
-  <!--<thead>-->
-    <!--<tr>-->
-      <!--<th>Monkey</th>-->
-      <!--<th>Joined</th>-->
-      <!--<th>Belt</th>-->
-      <!--<th>Stripes</th>-->
-      <!--<th colspan="3"></th>-->
-    <!--</tr>-->
-  <!--</thead>-->
+<div class="row table-header">
+  <span class="col-md-3 table-monkey">Monkey</span>
+  <span class="col-md-2 table-joined">Joined</span>
+  <span class="col-md-7 table-belt">Belt</span>
+</div>
 
-  <!--<tbody>-->
-    <!--<% @members.each do |member| %>-->
-      <!--<tr>-->
-        <!--<td><%= link_to member.avatar, member %> <%= link_to member.fullname, member %></td>-->
-        <!--<td><%= member.date_joined %></td>-->
-        <!--<td><%= member.belt %></td>-->
-        <!--<td><%= member.stripes %></td>-->
-        <!--<td><%= link_to 'Show', member %></td>-->
-        <!--<td><%= link_to 'Edit', edit_member_path(member) %></td>-->
-        <!--<td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-      <!--</tr>-->
-    <!--<% end %>-->
-  <!--</tbody>-->
-<!--</table>-->
-
-  <div class="row table-header">
-    <span class="col-lg-3 table-monkey">Monkey</span>
-    <span class="col-lg-2 table-joined">Joined</span>
-    <span class="col-lg-7 table-belt">Belt</span>
-  </div>
-
-
-    <% @members.each do |member| %>
-    <div class="row table-row">
-          <div class="col-lg-3 member-name"><span><%= link_to member.avatar, member %> <%= link_to member.fullname, member %></span></div>
-          <div class="col-lg-2 member-joined"><%= member.date_joined %></div>
-          <div class="col-lg-4 member-belt">
-            <div class="belt-brown">
-              <ul class="patch">
-                <li class="stripe"></li>
-                <li class="stripe"></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-1"><%= link_to 'Show', member %></div>
-          <div class="col-lg-1"><%= link_to 'Edit', edit_member_path(member) %></div>
-          <div class="col-lg-1"><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<% @members.each do |member| %>
+  <div class="row table-row">
+    <div class="col-md-3 member-name">
+      <span><%= link_to member.avatar, member %> <%= link_to member.fullname, member %></span>
     </div>
-    <% end %>
+    <div class="col-md-2 member-joined">
+      <%= member.date_joined %>
+    </div>
+    <div class="col-md-4 member-belt">
+      <%= render partial: 'layouts/belt', locals: {belt: member.belt, stripes: member.stripes} %>
+    </div>
+    <div class="col-md-3">
+      <%= link_to 'Show', member %> |
+      <%= link_to 'Edit', edit_member_path(member) %> |
+      <%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div>
+<% end %>
 
 

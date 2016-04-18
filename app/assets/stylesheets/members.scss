@@ -7,7 +7,7 @@
 }
 
 .table-row {
-  border-bottom: 2px solid $lightblue;
+  border-bottom: 1px solid gray;
   div {
     padding-top: 10px;
   }
@@ -17,16 +17,40 @@
   margin-top: -5px;
 }
 
-.belt-brown {
+div[class*="belt-"] {
   position: relative;
   height: 30px;
-  background-color: brown;
   border-radius: 5px 0px 0px 5px ;
+}
+
+.belt-white {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.belt-blue {
+  background-color: #363FFB;
+}
+
+.belt-purple {
+  background-color: #9840FB;
+}
+
+.belt-brown {
+  background-color: #763E1D;
+}
+
+.belt-black {
+  background-color: black;
+  .patch
+  {
+    background-color: #BE0712;
+  }
 }
 
 .patch {
   background-color: black;
-  width: 70px;
+  width: 65px;
   height: 100%;
   margin-left: 21px;
   margin-top: -10px;
