@@ -67,3 +67,19 @@ div[class*="belt-"] {
   list-style-type: none;
   display: inline-block;
 }
+
+.avatar {
+  width: 200px;
+  // height: 200px;
+}
+
+.avatar_small {
+  width: 25px;
+  height: 25px;
+}
+
+.show-belt {
+  .patch {
+    margin-top: 0;
+  }
+}

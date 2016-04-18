@@ -6,6 +6,8 @@ class Member < ActiveRecord::Base
   validates :belt, inclusion: { in: 1..5, message: "must be selected" }
   validates :stripes, inclusion: { in: 0..4, message: "number must be selected" }
 
+  mount_uploader :avatar, AvatarUploader
+
   def fullname
     self.first_name.to_s + " " + self.nickname.to_s + " " + self.last_name.to_s
   end
