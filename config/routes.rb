@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   resources :members
   devise_for :users
-  root 'members#index'
 
   devise_scope :user do
+    get "/login" => "devise/sessions#new"
+    delete "/logout" => "devise/sessions#destroy"
+
     authenticated :user do
       root 'members#index', as: :authenticated_root
     end
@@ -12,5 +14,7 @@ Rails.application.routes.draw do
       root 'devise/sessions#new', as: :unauthenticated_root
     end
   end
+
+  root 'members#index'
 
 end
