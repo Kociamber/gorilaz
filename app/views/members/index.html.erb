@@ -2,9 +2,10 @@
 <%= link_to 'Add Member', new_member_path %>
 
 <div class="row table-header">
-  <span class="col-md-3 table-monkey">Monkey</span>
-  <span class="col-md-2 table-joined">Joined</span>
-  <span class="col-md-7 table-belt">Belt</span>
+  <span class="col-md-2 table-monkey"><%= sort_link "first_name" %></span>
+  <span class="col-md-2 table-monkey"><%= sort_link "last_name" %></span>
+  <span class="col-md-2 table-joined"><%= sort_link "date_joined" %></span>
+  <span class="col-md-6 table-belt"><%= sort_link "belt" %></span>
 </div>
 
 <% @members.each do |member| %>
