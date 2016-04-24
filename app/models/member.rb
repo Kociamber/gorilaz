@@ -12,4 +12,9 @@ class Member < ActiveRecord::Base
     self.first_name.to_s + " " + self.nickname.to_s + " " + self.last_name.to_s
   end
 
+  def self.search(search)
+    #where("first_name LIKE ?", "%#{search}%")
+    where("last_name LIKE ?", "%#{search}%")
+  end
+
 end

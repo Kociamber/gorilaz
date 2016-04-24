@@ -4,7 +4,11 @@ class MembersController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
-    @members = Member.order("#{sort_column} #{sort_direction}")
+    if params[:search]
+      @members = Member.search(params[:search]).order("#{sort_column} #{sort_direction}")
+    else
+      @members = Member.order("#{sort_column} #{sort_direction}")
+    end
   end
 
   def show
