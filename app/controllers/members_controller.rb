@@ -1,9 +1,10 @@
 class MembersController < ApplicationController
   before_action :set_member, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  helper_method :sort_column, :sort_direction
 
   def index
-    @members = Member.all
+    @members = Member.order("#{sort_column} #{sort_direction}")
   end
 
   def show
@@ -40,5 +41,17 @@ class MembersController < ApplicationController
 
     def member_params
       params.require(:member).permit(:first_name, :nickname, :last_name, :date_birth, :date_joined, :belt, :stripes, :avatar, :description)
+    end
+
+    def sortable_columns
+      ["first_name", "nickname", "last_name", "date_birth", "date_joined", "belt"]
+    end
+
+    def sort_column
+      sortable_columns.include?(params[:column]) ? params[:column] : "first_name"
+    end
+
+    def sort_direction
+      %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
     end
 end
