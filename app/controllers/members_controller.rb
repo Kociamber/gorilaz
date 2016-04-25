@@ -7,7 +7,7 @@ class MembersController < ApplicationController
     if params[:search]
       @members = Member.search(params[:search]).order("#{sort_column} #{sort_direction}")
     else
-      @members = Member.order("#{sort_column} #{sort_direction}")
+      @members = Member.order("#{sort_column} #{sort_direction}").order("stripes #{sort_direction}")
     end
   end
 
