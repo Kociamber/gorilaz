@@ -1,4 +1,4 @@
-== Gorilaz!
+### Gorilaz!
 
 A small and very simple application requested by my friend. It is supposed to store some details about members of Academia Gorila, BJJ gym located in Warsaw, Poland. A handy tool when promotion day is coming.. ;)
 
