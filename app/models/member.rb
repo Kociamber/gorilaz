@@ -14,7 +14,9 @@ class Member < ActiveRecord::Base
 
   def self.search(search)
     #where("first_name LIKE ?", "%#{search}%")
-    where("LOWER(last_name) LIKE ?", "%#{search}%")
+    #where("lower(last_name) LIKE ?", "%#{search}%")
+    #where("lower(first_name || ' ' || last_name) like ?", "%#{search}%")
+    where("lower(first_name || ' ' || nickname || ' ' || last_name) like ?", "%#{search}%")
   end
 
 end

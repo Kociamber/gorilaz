@@ -24,15 +24,15 @@
   </div>
   <div class="field form-group">
     <%= f.label :date_birth %><br>
-    <%= f.date_select :date_birth, class: "form-control" %>
+    <%= f.date_select :date_birth, start_year: 1950, class: "form-control" %>
   </div>
   <div class="field form-group">
     <%= f.label :date_joined %><br>
-    <%= f.date_select :date_joined, class: "form-control" %>
+    <%= f.date_select :date_joined, start_year: 2011, end_year: Time.now.year, class: "form-control" %>
   </div>
   <div class="field form-group">
     <%= f.label :belt %><br>
-    <%= f.select :belt, [['White','1'],['Blue','2'],['Purple','3'],['Borwn','4'],['Black','5']], class: "form-control" %>
+    <%= f.select :belt, [['White','1'],['Blue','2'],['Purple','3'],['Brown','4'],['Black','5']], class: "form-control" %>
   </div>
   <div class="field form-group">
     <%= f.label :stripes %><br>
