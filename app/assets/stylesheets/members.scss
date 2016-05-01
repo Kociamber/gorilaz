@@ -3,6 +3,12 @@
   span {
     padding-top: 10px;
     font-weight: bold;
+    a {
+      vertical-align: top;
+      .glyphicon {
+        padding-top: 0px;
+      }
+    }
   }
 }
 
@@ -76,10 +82,13 @@ div[class*="belt-"] {
 .avatar_small {
   width: 25px;
   height: 25px;
+  margin-left: -10px;
+  margin-right: 5px;
 }
 
 .show-belt {
   .patch {
     margin-top: 0;
   }
+  margin-bottom: 10px;
 }
