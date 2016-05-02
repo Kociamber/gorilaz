@@ -20,8 +20,8 @@
         <% end %>
       </ul>
       <%= form_tag(members_path, method: :get, id: "search-form", class: "navbar-form navbar-right") do %>
-        <%= text_field_tag :search, params[:search], placeholder: "Last name", class: "form-control" %>
-        <%= submit_tag "Search", class: "btn btn-default" %>
+        <%= text_field_tag :search, params[:search], placeholder: t('Person'), class: "form-control" %>
+        <%= submit_tag t("Search"), class: "btn btn-default" %>
       <% end %>
     </div>
   </div>

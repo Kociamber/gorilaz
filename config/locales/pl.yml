@@ -24,6 +24,8 @@ pl:
           has_many: Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}
           has_one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
   Add Member: 'Dodaj osobę'
+  New Member: 'Dodaj osobę'
+  Editing Member: Edycja
   Show: Pokaż
   Edit: Edytuj
   Destroy: Zniszcz
@@ -36,6 +38,10 @@ pl:
   Sign up: Zarejestruj się
   Log in: Zaloguj się
   password: Hasło
+  Search: Szukaj
+  search: Szukaj
+  Person: Osoba
+  person: osoba
   Forgot your password?: Zapomniałeś hasła?
   Didn't receive unlock instructions?: Nie otrzymałeś instrukcji?
   date:
@@ -201,6 +207,8 @@ pl:
         one: "%{model} nie został zachowany z powodu jednego błędu"
         other: "%{model} nie został zachowany z powodu %{count} błędów"
   helpers:
+    placeholder:
+      member:
     select:
       prompt: Proszę wybrać
     submit:
