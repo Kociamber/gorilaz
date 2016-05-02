@@ -21,3 +21,8 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    models:
+      member:
+        one: Member
+        other: Members
