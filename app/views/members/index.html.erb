@@ -1,4 +1,4 @@
-<h2>Academia Gorila Members</h2>
+<h2>Academia Gorila <%= Member.model_name.human(count: 2).titleize %></h2>
 
 <div class="row table-header">
   <span class="col-md-3 table-monkey"><%= sort_link "first_name" %> <%= sort_link "last_name" %></span>
@@ -19,9 +19,9 @@
       <%= render partial: 'layouts/belt', locals: {belt: member.belt, stripes: member.stripes} %>
     </div>
     <div class="col-md-3">
-      <%= link_to 'Show', member %> |
-      <%= link_to 'Edit', edit_member_path(member) %> |
-      <%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to t('Show'), member %> |
+      <%= link_to t('Edit'), edit_member_path(member) %> |
+      <%= link_to t('Destroy'), member, method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
   </div>
 <% end %>

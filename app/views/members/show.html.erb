@@ -15,23 +15,23 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <strong>Joined:</strong>
+        <strong><%= t(:Joined) %>:</strong>
         <%= @member.date_joined %>
         <br/>
-        <strong>Born:</strong>
+        <strong><%= t(:Born) %>:</strong>
         <%= @member.date_birth %>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <strong>Description:</strong>
+        <strong><%= t(:Description) %>:</strong>
         <%= @member.description %>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <%= link_to 'Edit', edit_member_path(@member) %> |
-        <%= link_to 'Back', members_path %>
+        <%= link_to t('Edit'), edit_member_path(@member) %> |
+        <%= link_to t('Back'), members_path %>
       </div>
     </div>
   </div>
