@@ -24,11 +24,11 @@
   </div>
   <div class="field form-group">
     <%= f.label :date_birth %><br>
-    <%= f.date_select :date_birth, start_year: 1950, class: "form-control" %>
+    <%= f.date_select :date_birth, start_year: 1950, include_blank: true, default: nil, class: "form-control" %>
   </div>
   <div class="field form-group">
     <%= f.label :date_joined %><br>
-    <%= f.date_select :date_joined, start_year: 2011, end_year: Time.now.year, class: "form-control" %>
+    <%= f.date_select :date_joined, start_year: 2005, end_year: Time.now.year, include_blank: true, default: nil, class: "form-control" %>
   </div>
   <div class="field form-group">
     <%= f.label :belt %><br>
