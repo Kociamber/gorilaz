@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading"> Members total:
+        <span class="badge belt-badge"><%= belt_count %></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <%= render 'layouts/totals', belt: 1 %>
+  </div>
+  <div class="col-md-3">
+    <%= render 'layouts/totals', belt: 2 %>
+  </div>
+  <div class="col-md-3">
+    <%= render 'layouts/totals', belt: 3 %>
+  </div>
+  <div class="col-md-3">
+    <%= render 'layouts/totals', belt: 4 %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <%= render 'layouts/totals', belt: 5 %>
+  </div>
+  <div class="col-md-9">
+  </div>
+</div>

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :members
   devise_for :users, controllers: { registrations: "registrations"}
 
+  get "/pages/:page" => "pages#show"
+
   devise_scope :user do
     get "/login" => "devise/sessions#new"
     delete "/logout" => "devise/sessions#destroy"
