@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><%= belt_name(belt) %>
+    <span class="badge belt-badge"><%= belt_count(belt) %></span>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span class="badge"><%= belt_count(belt, 1) %></span>
+      1 stripe
+    </li>
+    <li class="list-group-item">
+      <span class="badge"><%= belt_count(belt, 2) %></span>
+      3 stripes
+    </li>
+    <li class="list-group-item">
+      <span class="badge"><%= belt_count(belt, 3) %></span>
+      4 stripes
+    </li>
+    <li class="list-group-item">
+      <span class="badge"><%= belt_count(belt, 4) %></span>
+      2 stripes
+    </li>
+  </ul>
+</div>
