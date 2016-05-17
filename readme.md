@@ -17,7 +17,7 @@ The app allows to sort the listing in many ways and use different search methods
 A really cool feature is that the belts and the stripes are being rendered by a nice piece of CSS code thanks to my lovely wife.
 
 There is a working demo linked to the master branch on Heroku. It can be found [here](http://gorilaz.herokuapp.com "Gorilaz test")
-Feel free to log in and mess around!
+User limit is set to 2, you will have to log in via my account. Feel free to sign in and mess around!
 
 '''
 Login:  koci@o2.pl
@@ -61,11 +61,10 @@ If you want to run it on local system.
 
 8. Using a browser, go to `http://localhost:3000`
 
-9. Wanna know more about Rails?
+If you would like to know more about us or join the classes, check our [website](https://www.gorila.pl "Gorila's Homepage") or [Facebook page](https://www.facebook.com/GorilaAkademia/?fref=ts "FB")!
+
+Need more details about Rails?
     * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
     * [Ruby on Rails Guides](http://guides.rubyonrails.org)
     * [The API Documentation](http://api.rubyonrails.org)
     * [Ruby on Rails Tutorial](http://www.railstutorial.org/book)
-
-
-If you want to know more about us, check our [website](https://www.gorila.pl "Gorila's Homepage") or [Facebook page](https://www.facebook.com/GorilaAkademia/?fref=ts "FB") page!
