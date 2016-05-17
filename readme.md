@@ -16,7 +16,7 @@ The app allows to sort the listing in many ways and use different search methods
 
 A really cool feature is that the belts and the stripes are being rendered by a nice piece of CSS code thanks to my lovely wife.
 
-There is a working demo linked to the master branch on Heroku. It can be found [here](http://gorilaz.herokuapp.com "Gorilaz test")
+There is a working demo linked to the master branch on Heroku. It can be found [here](http://gorilaz.herokuapp.com "Gorilaz test").
 Feel free to log in and mess around!
 
 ```
@@ -27,7 +27,7 @@ Pass:   dupadupa
 Please just remember it's Heroku - if you will upload your picture, it will disappear after a short while.
 
 ## Installation
-If you want to run it on local system.
+If you want to run Gorilaz on local system.
 
 1. Make sure Ruby is installed on your system with following command:
 
