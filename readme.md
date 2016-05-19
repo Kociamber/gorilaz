@@ -4,7 +4,7 @@ A small and very simple application made for my friend who is an owner of Academ
 
 The gym becomes more and more popular, number of people attending Brazilian Jiu Jitsu classes in the gym and all it's branches is growing vastly. Our professors needed a tool for gathering some some basic details about the members, this particularly becomes handy when a promotion day is coming ;-)
 
-So this application is a member catalog. It is supposed to store basic informations like:
+So this application is a members catalog. It is supposed to store basic informations like:
 - name, nickname, last name
 - belt and stripes
 - date of birth
@@ -19,10 +19,10 @@ A really cool feature is that the belts and the stripes are being rendered by a 
 There is a working demo linked to the master branch on Heroku. It can be found [here](http://gorilaz.herokuapp.com "Gorilaz test")
 User limit is set to 2, you will have to log in via my account. Feel free to sign in and mess around!
 
-'''
+```
 Login:  koci@o2.pl
 Pass:   dupadupa
-'''
+```
 
 Please just remember it's Heroku - if you will upload your picture, it will disappear after a short while.
 
@@ -61,12 +61,12 @@ If you want to run it on local system.
 
 8. Using a browser, go to `http://localhost:3000`
 
-9. Sign up, log in and mess around!
+9. Sign up, log in and have fun :) Please remember that you may create only two accounts!
 
 If you would like to know more about us or join the classes, check our [website](https://www.gorila.pl "Gorila's Homepage") or [Facebook page](https://www.facebook.com/GorilaAkademia/?fref=ts "FB")!
 
 Need more details about Rails?
-    * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
-    * [Ruby on Rails Guides](http://guides.rubyonrails.org)
-    * [The API Documentation](http://api.rubyonrails.org)
-    * [Ruby on Rails Tutorial](http://www.railstutorial.org/book)
+        * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
+        * [Ruby on Rails Guides](http://guides.rubyonrails.org)
+        * [The API Documentation](http://api.rubyonrails.org)
+        * [Ruby on Rails Tutorial](http://www.railstutorial.org/book)
