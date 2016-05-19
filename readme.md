@@ -2,9 +2,9 @@
 
 A small and very simple application made for my friend who is an owner of Academia Gorila, martial arts gym located in Warsaw, Poland.
 
-The gym becomes more and more popular. When the promotion day for Brazilian Jiu Jitsu practitioners is coming, Marcin is having more and more issues with remembering all the details about every single person.
+The gym becomes more and more popular, number of people attending Brazilian Jiu Jitsu classes in the gym and all it's branches is growing vastly. Our professors needed a tool for gathering some some basic details about the members, this particularly becomes handy when a promotion day is coming ;-)
 
-Basically this tool is a member catalog. It is supposed to store information like:
+So this application is a member catalog. It is supposed to store basic informations like:
 - name, nickname, last name
 - belt and stripes
 - date of birth
@@ -12,22 +12,22 @@ Basically this tool is a member catalog. It is supposed to store information lik
 - avatar
 - additional notes
 
-The app allows to sort the listing in many ways and use different search methods. It also provides simple statistics and other minor functionalities.. and it keeps growing!
+The tool allows to sort the listing in many ways and use different search methods. It also provides simple statistics and other minor functionalities.. and it keeps growing!
 
-A really cool feature is that the belts and the stripes are being rendered by a nice piece of CSS code thanks to my lovely wife.
+A really cool feature is that the belts and the stripes are being rendered by a nice piece of CSS code contributed by my lovely wife.
 
-There is a working demo linked to the master branch on Heroku. It can be found [here](http://gorilaz.herokuapp.com "Gorilaz test").
-Feel free to log in and mess around!
+There is a working demo linked to the master branch on Heroku. It can be found [here](http://gorilaz.herokuapp.com "Gorilaz test")
+User limit is set to 2, you will have to log in via my account. Feel free to sign in and mess around!
 
-```
+'''
 Login:  koci@o2.pl
 Pass:   dupadupa
-```
+'''
 
 Please just remember it's Heroku - if you will upload your picture, it will disappear after a short while.
 
 ## Installation
-If you want to run Gorilaz on local system.
+If you want to run it on local system.
 
 1. Make sure Ruby is installed on your system with following command:
 
@@ -39,7 +39,7 @@ If you want to run Gorilaz on local system.
 
 3. Enter your projects folder and clone Gorilaz git repository:
 
-        $ git clone git@github.com:Kociamber/gorilaz.git
+  $ git clone git@github.com:Kociamber/gorilaz.git
 
 4. Enter Gorilaz folder and install all dependencies:
 
@@ -61,11 +61,12 @@ If you want to run Gorilaz on local system.
 
 8. Using a browser, go to `http://localhost:3000`
 
-9. Wanna know more about Rails?
+9. Sign up, log in and mess around!
+
+If you would like to know more about us or join the classes, check our [website](https://www.gorila.pl "Gorila's Homepage") or [Facebook page](https://www.facebook.com/GorilaAkademia/?fref=ts "FB")!
+
+Need more details about Rails?
     * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
     * [Ruby on Rails Guides](http://guides.rubyonrails.org)
     * [The API Documentation](http://api.rubyonrails.org)
     * [Ruby on Rails Tutorial](http://www.railstutorial.org/book)
-
-
-If you want to know more about Academia Gorila, check our [website](https://www.gorila.pl "Gorila's Homepage") or [Facebook page](https://www.facebook.com/GorilaAkademia/?fref=ts "FB") page!
