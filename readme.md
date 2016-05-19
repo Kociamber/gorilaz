@@ -48,18 +48,20 @@ If you want to run it on local system.
 
 5. Create db and migrate schema:
 
-  $ rake db:create
-  $ rake db:migrate
+        $ rake db:create
+        $ rake db:migrate
 
 6. Populate db with 100 random generated members (optional step):
 
-  $ rake db:seed
+        $ rake db:seed
 
 7. Start the web server:
 
         $ rails server
 
 8. Using a browser, go to `http://localhost:3000`
+
+9. Sign up, log in and mess around!
 
 If you would like to know more about us or join the classes, check our [website](https://www.gorila.pl "Gorila's Homepage") or [Facebook page](https://www.facebook.com/GorilaAkademia/?fref=ts "FB")!
 
