@@ -1,15 +1,16 @@
 <h2>Academia Gorila <%= Member.model_name.human(count: 2).titleize %></h2>
 
 <div class="row table-header">
-  <span class="col-md-3 table-monkey"><%= sort_link "first_name" %> <%= sort_link "last_name" %></span>
+  <span class="col-md-4 table-monkey"><%= sort_link "id" %> <%= sort_link "first_name" %> <%= sort_link "last_name" %></span>
   <!-- <span class="col-md-2 table-monkey"><%= sort_link "last_name" %></span> -->
   <span class="col-md-2 table-joined"><%= sort_link "date_joined" %></span>
-  <span class="col-md-7 table-belt"><%= sort_link "belt" %></span>
+  <span class="col-md-6 table-belt"><%= sort_link "belt" %></span>
 </div>
 
 <% @members.each do |member| %>
   <div class="row table-row">
-    <div class="col-md-3 member-name">
+    <div class="col-md-4 member-name">
+      <span class="id"><%= member.id %></span>
       <%= link_to image_tag(member.avatar, class: "avatar_small"), member %><%= link_to member.fullname, member %>
     </div>
     <div class="col-md-2 member-joined">
@@ -18,7 +19,7 @@
     <div class="col-md-4 member-belt">
       <%= render partial: 'layouts/belt', locals: {belt: member.belt, stripes: member.stripes} %>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <%= link_to t('Show'), member %> |
       <%= link_to t('Edit'), edit_member_path(member) %> |
       <%= link_to t('Destroy'), member, method: :delete, data: { confirm: 'Are you sure?' } %>
