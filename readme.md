@@ -64,9 +64,3 @@ If you want to run it on local system.
 9. Sign up, log in and have fun :) Please remember that you may create only two accounts!
 
 If you would like to know more about us or join the classes, check our [website](https://www.gorila.pl "Gorila's Homepage") or [Facebook page](https://www.facebook.com/GorilaAkademia/?fref=ts "FB")!
-
-   Need more details about Rails?
-    * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
-    * [Ruby on Rails Guides](http://guides.rubyonrails.org)
-    * [The API Documentation](http://api.rubyonrails.org)
-    * [Ruby on Rails Tutorial](http://www.railstutorial.org/book)
