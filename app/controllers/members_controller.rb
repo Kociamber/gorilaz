@@ -48,11 +48,11 @@ class MembersController < ApplicationController
     end
 
     def sortable_columns
-      ["first_name", "nickname", "last_name", "date_birth", "date_joined", "belt"]
+      ["id", "first_name", "nickname", "last_name", "date_birth", "date_joined", "belt"]
     end
 
     def sort_column
-      sortable_columns.include?(params[:column]) ? params[:column] : "first_name"
+      sortable_columns.include?(params[:column]) ? params[:column] : "id"
     end
 
     def sort_direction
