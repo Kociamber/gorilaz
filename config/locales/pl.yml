@@ -25,6 +25,7 @@ pl:
           has_one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
   Add Member: 'Dodaj osobę'
   New Member: 'Dodaj osobę'
+  Members total: Członków w sumie
   Editing Member: Edycja
   Show: Pokaż
   Edit: Edytuj
@@ -42,6 +43,22 @@ pl:
   search: Szukaj
   Person: Osoba
   person: osoba
+  White: Biały
+  white: biały
+  Blue: Niebieski
+  blue: niebieski
+  Purple: Purpurowy
+  purple: purpurowy
+  Brown: Brązowy
+  brown: brązowy
+  Black: Czarny
+  black: czarny
+  Stripe: Belka
+  stripe: belka
+  Stripes: Belki
+  stripes: belki
+  Statistics: Podsumowanie
+  statistics: podsumowanie
   Forgot your password?: Zapomniałeś hasła?
   Didn't receive unlock instructions?: Nie otrzymałeś instrukcji?
   date:
