@@ -4,20 +4,24 @@
   </div>
   <ul class="list-group">
     <li class="list-group-item">
+      <span class="badge"><%= belt_count(belt, 0) %></span>
+      <%= t('Zero stripes') %>
+    </li>
+    <li class="list-group-item">
       <span class="badge"><%= belt_count(belt, 1) %></span>
-      1 <%= t('stripe') %>
+      <%= t('One stripe') %>
     </li>
     <li class="list-group-item">
       <span class="badge"><%= belt_count(belt, 2) %></span>
-      2 <%= t('stripes') %>
+      <%= t('Two stripes') %>
     </li>
     <li class="list-group-item">
       <span class="badge"><%= belt_count(belt, 3) %></span>
-      3 <%= t('stripes') %>
+      <%= t('Three stripes') %>
     </li>
     <li class="list-group-item">
       <span class="badge"><%= belt_count(belt, 4) %></span>
-      4 <%= t('stripes') %>
+      <%= t('Four stripes') %>
     </li>
   </ul>
 </div>
