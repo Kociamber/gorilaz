@@ -1,18 +1,19 @@
 ### Gorilaz!
 
-A small and very simple application made for my friend who is an owner of Academia Gorila, martial arts gym located in Warsaw, Poland.
+A small and very simple application made for my friend who is co owner of Academia Gorila, martial arts gym located in Warsaw, Poland.
 
-The gym becomes more and more popular, number of people attending Brazilian Jiu Jitsu classes in the gym and all it's branches is growing vastly. Our professors needed a tool for gathering some some basic details about the members, this particularly becomes handy when a promotion day is coming ;-)
+The gym becomes more and more popular, number of people attending Brazilian Jiu Jitsu classes in main Academy  and all the branches is growing vastly. Our professors needed a tool for gathering some some basic details about the students and manage their belt promotions.
 
-So this application is a members catalog. It is supposed to store basic informations like:
+So yes, this application is a members catalog. It is supposed to store basic informations like:
 - name, nickname, last name
-- belt and stripes
+- current belt and stripes
+- belt and stripes proposed for next promotion
 - date of birth
 - date of joining the gym
 - avatar
 - additional notes
 
-The tool allows to sort the listing in many ways and use different search methods. It also provides simple statistics and other minor functionalities.. and it keeps growing!
+The tool allows to sort the listing in many ways and use different search methods. It helps to manage the promotions by adding the propsed belt, making the list of students that are going to be promoted and by adding "promote" option which is switching their current belt with proposed one. It also provides simple statistics and other minor functionalities.. and it keeps growing!
 
 A really cool feature is that the belts and the stripes are being rendered by a nice piece of CSS code contributed by my lovely wife.
 
