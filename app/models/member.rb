@@ -1,5 +1,7 @@
 class Member < ActiveRecord::Base
 
+  has_many :belts
+
   validates :first_name, presence: true, length: 0..30
   validates :nickname, length: 0..50
   validates :last_name, presence: true, length: 0..35
